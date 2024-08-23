@@ -1,0 +1,40 @@
+.card {
+    border: 3px solid rgb(26, 60, 94);
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(60, 116, 169, 0.59);
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; 
+}
+
+.details {
+    margin-top: 16px;
+    color:rgb(204, 206, 207);
+}
+
+.adult-sign {
+    color:rgb(204, 206, 207);
+    font-weight: bold;
+}
+
+button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color:rgb(204, 206, 207);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color:rgb(204, 206, 207);
+}

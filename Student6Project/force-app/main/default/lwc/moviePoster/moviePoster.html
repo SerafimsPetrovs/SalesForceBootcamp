@@ -1,0 +1,10 @@
+<template>
+    <div class="poster-container">
+        <template if:true={hasPoster}>
+            <img src={posterUrl} alt={altText} class="poster-image"/>
+        </template>
+        <template if:false={hasPoster}>
+            <p>Image-ine That! No Photo Available</p>
+        </template>
+    </div>
+</template>

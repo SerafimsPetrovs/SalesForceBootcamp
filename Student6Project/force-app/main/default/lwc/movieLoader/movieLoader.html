@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Movie Loader" icon-name="custom:custom63">
+        <lightning-file-upload
+            label="Upload file with movies data"
+            name="fileUploader"
+            accept=".json"
+            record-id={recordId}
+            onuploadfinished={handleUploadFinished}>
+        </lightning-file-upload>
+    </lightning-card>
+</template>

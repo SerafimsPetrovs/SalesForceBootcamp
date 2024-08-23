@@ -1,0 +1,10 @@
+.poster-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.poster-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}

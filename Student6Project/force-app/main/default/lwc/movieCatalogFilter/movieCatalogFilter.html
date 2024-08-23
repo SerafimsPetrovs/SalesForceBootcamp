@@ -1,0 +1,10 @@
+<template>
+    <div class="filter">
+        <label for="genre">Genres:  </label>
+        <select id="genre" onchange={handleGenreChange}>
+            <template for:each={genreOptions} for:item="option">
+                <option key={option.value} value={option.value}>{option.label}</option>
+            </template>
+        </select>
+    </div>
+</template>

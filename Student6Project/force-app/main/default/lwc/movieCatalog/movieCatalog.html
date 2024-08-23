@@ -1,0 +1,41 @@
+<template>
+    <div class="background">
+        <div class="filters">
+            <div class="filter-item">
+                <label for="genreFilter">Genres:  </label>
+                <select id="genreFilter" onchange={handleFilterChange}>
+                    <option value="">All</option>
+                    <template for:each={genreOptions} for:item="genre">
+                        <option value={genre} key={genre}>{genre}</option>
+                    </template>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="limitSize">Movies to display:  </label>
+                <select id="limitSize" onchange={handleLimitSizeChange}>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+        </div>
+
+        <template if:true={hasMovies}>
+            <div class="movie-catalog">
+                <template for:each={filteredMovies} for:item="movie">
+                    <c-movie-card key={movie.Id} record-id={movie.Id}></c-movie-card>
+                </template>
+            </div>
+
+            <div class="pagination">
+                <button onclick={handlePreviousPage} disabled={isPreviousDisabled}>Previous</button>
+                <span>Page {currentPage} of {totalPages}</span>
+                <button onclick={handleNextPage} disabled={isNextDisabled}>Next</button>
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+    </div>
+</template>

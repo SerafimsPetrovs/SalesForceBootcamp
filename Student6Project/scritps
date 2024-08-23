@@ -1,0 +1,8 @@
+delete [SELECT ID FROM Movie__c];
+delete [SELECT ID FROM Script__c];
+
+
+
+
+
+delete [SELECT Id FROM Client_Review__c];

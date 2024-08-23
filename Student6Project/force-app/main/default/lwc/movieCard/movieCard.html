@@ -1,0 +1,14 @@
+<template>
+    <div class="card">
+        <img src={moviePoster} alt={movieTitle} class="poster" />
+        <div class="details">
+            <h2>{movieTitle}</h2>
+            <p>Rating: {displayRating}</p>
+            <p>Genre: {genreDisplay}</p>
+            <template if:true={isHorror}>
+                <span class="adult-sign">18+</span>
+            </template>
+            <button onclick={handleDetailsClick}>Details</button>
+        </div>
+    </div>
+</template>

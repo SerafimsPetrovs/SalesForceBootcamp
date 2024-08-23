@@ -1,0 +1,38 @@
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(12, 28, 43);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px; 
+    color:rgb(204, 206, 207);
+}
+
+.filter-item {
+    margin-right: 10px; 
+    color:rgb(204, 206, 207);
+}
+
+.movie-catalog {
+    background-color: rgb(12, 28, 43);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    color:rgb(204, 206, 207);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color:rgb(204, 206, 207);
+}
+
+button {
+    margin: 0 10px;
+    color:rgb(204, 206, 207);
+}

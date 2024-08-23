@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actors_role_type__c</fullName>
+    <label>Actors role type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Main character</fullName>
+                <default>false</default>
+                <label>Main character</label>
+            </value>
+            <value>
+                <fullName>Side Character</fullName>
+                <default>false</default>
+                <label>Side Character</label>
+            </value>
+            <value>
+                <fullName>Dumb guy</fullName>
+                <default>false</default>
+                <label>Dumb guy</label>
+            </value>
+            <value>
+                <fullName>Villain</fullName>
+                <default>false</default>
+                <label>Villain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

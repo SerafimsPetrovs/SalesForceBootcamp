@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Reviews for this Movie">
+        <div class="slds-p-around_medium">
+            <template if:true={reviews.length}>
+                <template for:each={reviews} for:item="review">
+                    <lightning-layout key={review.Id} class="slds-box slds-m-bottom_small">
+                        <lightning-layout-item>
+                            <strong>{review.Client_Name__c}</strong> — {review.Review_Date__c}
+                            <p>{review.Review_Text__c}</p>
+                            <lightning-badge label={review.Rating__c}></lightning-badge>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </template>
+            </template>
+            <template if:false={reviews.length}>
+                <p>No reviews yet. Be the first to review this movie!</p>
+            </template>
+
+            <lightning-input label="Your Name" value={newReviewName} onchange={handleReviewNameChange}></lightning-input>
+            
+            <lightning-textarea label="New Review" value={newReviewText} onchange={handleReviewTextChange}></lightning-textarea>
+            
+            <lightning-combobox
+                name="Rating"
+                label="Rating"
+                value={newReviewRating}
+                placeholder="Select a rating"
+                options={ratingOptions}
+                onchange={handleReviewRatingChange}>
+            </lightning-combobox>
+            
+            <lightning-button label="Submit Review" onclick={handleSubmitReview} class="slds-m-top_small"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

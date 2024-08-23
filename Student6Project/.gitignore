@@ -1,0 +1,6 @@
+.sfdx/
+node_modules
+package-lock.jsonc
+debug.log
+.sf/
+.DS_Store
