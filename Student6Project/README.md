@@ -1,18 +1,18 @@
-# Salesforce DX Project: Next Steps
+# SalesForce Bootcamp Project
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
+Welcome to the SalesForce Bootcamp project repository! This project is focused on creating a comprehensive website dedicated to movies. The primary goal is to build a fully functional web application that allows users to browse, search, and discover various movies, leveraging the powerful tools and features provided by SalesForce.
 
-## How Do You Plan to Deploy Your Changes?
+## Project Purpose
+This project is part of the SalesForce Bootcamp course, which aims to provide hands-on experience in developing, deploying, and managing web applications using the SalesForce platform. Throughout this course, participants will gain practical skills in using SalesForce tools to create dynamic and interactive web applications.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Repository Structure
+- **Student6Project/**: The main project directory where all development work is stored. This includes code, configurations, and other essential resources.
+- 
+## Getting Started
+To get started with the project, follow these steps:
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. **Clone the Repository**: 
+   Clone this repository to your local machine using the following command:
+   ```bash
+   git clone https://github.com/SerafimsPetrovs/SalesForceBootcamp.git
